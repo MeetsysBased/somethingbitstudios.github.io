@@ -1,0 +1,53 @@
+html, body {
+    height: 100%;
+  }
+  .navbar-brand > .navbar-item {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .navbar-menu .navbar-item {
+    font-size: 14px;
+    transition: background-color .26s, color .26s;
+  }
+  .navbar-menu .navbar-item.active {
+    background-color: #222;
+    color: red;
+  }
+  .page {
+    height: 200%;
+    padding: 80px 0;
+    width: 100%;
+  }
+  .page:nth-child(odd) { background-color: rgb(0, 0, 0); }
+  .page:nth-child(even) { background-color: rgb(22, 22, 22); }
+
+
+
+body {
+    background-color: black;
+    
+}
+p {
+    color:rgb(255, 255, 255);
+}
+
+h2 {
+    color:rgb(185, 123, 255);
+    font-size:larger;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.title {
+    margin-top: 2rem;
+    color:rgb(119, 0, 255)
+}
+
+#topImg {
+    width: 100%;
+    height: auto;
+    
+}
+img {
+    margin-top: 2rem;
+}

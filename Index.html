@@ -2,13 +2,201 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"> 
+   <link href="base.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Page</h1>
-    <p>gg</p>
-    <p>gdgs</p>
+
+
+
+            <script src="fslightbox.js"></script>
+            <script src="jscr.js"></script>
+            <script>
+            
+                var mymap = L.map('map').setView([51.505, -0.09], 13);
+            
+                L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                    maxZoom: 18,
+                    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+                        'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                    id: 'mapbox/streets-v11',
+                    tileSize: 512,
+                    zoomOffset: -1
+                }).addTo(mymap);
+            
+            </script>
+ 
+
+  
+    <nav class="navbar is-dark is-fixed-bottom" role="navigation" aria-label="main navigation" style="z-index: 15;">
+      <div class="container">
+        <div class="navbar-brand">
+          <a title="VanillaJS ScrollSpy" class="navbar-item">Something-bit Studios</a>
+
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navbar" class="navbar-menu navbar-scroll">
+          <div class="navbar-start">
+            <a href="#home" title="Home" class="navbar-item active">Main</a>
+            <a href="#portfolio" title="Portfolio" class="navbar-item">TCQFFWF</a>
+            <a href="#about" title="About" class="navbar-item">Statistics</a>
+            <a href="#contact" title="Contact" class="navbar-item">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+    <section id="home" class="page">
+      <div class="container">
+          <img src="SBlogo.png" id="topImg">
+        <h1 class="title">This is the Something-bit Studios page!</h1>
+        <p>Our team at the something-bit studios headquarters, consisting of 1 members, are working hard to bring you quality titles such as Example and AnotherExample! The engine of choice for our games is Unity, which gives us freedom to make any games we please. Now, lets meet the team!</p>
+     <h2>PeakFace</h2>
+     <p>Our first member Peakface, is a starting programmer, web designer, level designer, artist, music composer and writer. He uses all of the skills mentioned above to make the games a reality. He is also a professional procrastinator.</p>
+     <p>He has experience with c#, python, html and css.</p>
+     <h2>Where to find us?</h2>
+     <p>The something-bit studios headquarters are not located in London, which you can see on the map! The true location is unknown.</p>
+     
+  
+<div id="map" style="width: 60%; height: 600px; position: relative; top: 20px; left: 100px;z-index: 0;
+padding-top: 2rem;" class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0"><div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/12/2046/1361?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 512px; height: 512px; backface-visibility: hidden; transform: translate3d(-200px, -347px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/12/2047/1361?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 512px; height: 512px; backface-visibility: hidden; transform: translate3d(312px, -347px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/12/2046/1362?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 512px; height: 512px; backface-visibility: hidden; transform: translate3d(-200px, 165px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/12/2047/1362?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 512px; height: 512px; backface-visibility: hidden; transform: translate3d(312px, 165px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-shadow-pane"></div><div class="leaflet-pane leaflet-overlay-pane"></div><div class="leaflet-pane leaflet-marker-pane"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(1.04805e+06px, 697379px, 0px) scale(4096);"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">−</a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> | Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a></div></div></div></div>
+            <script>
+            
+                var mymap = L.map('map').setView([51.505, -0.09], 13);
+            
+                L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                    maxZoom: 18,
+                    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+                        'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                    id: 'mapbox/streets-v11',
+                    tileSize: 512,
+                    zoomOffset: -1
+                }).addTo(mymap);
+            
+            </script>
+
+
+
+    </div>
+    </section>
+
+    <section id="portfolio" class="page">
+      <div class="container">
+        <h2 class="title">The Crazy Quest For Free Wi-Fi</h2>
+        <p>A game recently released by us.</p>
+        <p>The Crazy Quest for Free Wi-Fi is based on "real" events of a wi-fi suddenly breaking down, and someone needing to go retrieve a another wi-fi router. Why only "real" may you ask? It was not so free in real life. </p>
+        <p>This is a platformer game, with some RPGish elements, like talking. Currently, there is only one special ability, the drone. The basic actions a player can perform are jump, walk, duck and walljump. There is one bossfight in the game so far.</p>
+        <a data-fslightbox href="gallery.html">
+<p>Check out our gallery of screenshots here!</p>
+            <img src="TCQlogo.png" id="logo" >
+            </a>
+
+            <div style="margin-top: 2rem;display: flex;align-items: center;flex-direction: column;">
+                <h2 >Trailer</h2>
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/AIKTK6z6kwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h2 >Here is the link to:</h2>
+            <a href="https://something-bit.itch.io/the-crazy-quest-for-free-wi-fi">   Download the game!</a>
+            </div>
+            
+      </div>
+    </section>
+
+    <section id="about" class="page">
+      <div class="container">
+        <h2 class="title">Statistics</h2>
+        <div id="move">
+
+<p>I currently have no statistics to show you, so have a moving text thats hard to read instead! You deserve it, after all... </p>
+<p>This is the bar chart, just in case someone wants it, it shows the amount percentage of people using computers troughout the years!</p>
+<p>Just my estimation, so don´t use this as a source!</p>
+        </div>
+        <script src="anime.min.js"> </script>
+    <script>
+        anime({
+            targets:"#move" ,
+            keyframes: [
+                {translateX: 500 },
+                {translateX:0}
+               
+                
+            ],
+            duration: 3000,
+            loop: true
+        });
+       
+
+
+    </script>
+      </div>
+
+      <div>
+        <h2 style="display: flex; justify-content: center;">"Computer usage Chart, 0-2020"</h2>
+    </div>
+    <div class="container">
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <script>
+
+        let myChart = document.getElementById("myChart").getContext("2d");
+        let baseChart = new Chart(myChart, {
+        type: "bar",
+        data:{
+            labels: ["0", "0-500", "500-1000", "1000-1500", "1500-1800", "2020"],
+            datasets: [
+               {label:"% of usage in 2021",
+            data: [
+                0,
+                0,
+                0,
+                0,
+                0,
+                99
+            ],
+            backgroundColor: [
+             "yellow"
+        ]
+            }
+            ]
+        },
+        options:{}
+        });
+        
+        
+        </script>
+    </section>
+
+    <section id="contact" class="page">
+      <div class="container">
+        <h2 class="title">Contact</h2>
+        <p>Email: somethingbitstudios@gmail.com</p>
+      </div>
+    </section>
+
+    <script src="scrollspy.js"></script>
+    <script>
+      const navbar = document.querySelector('#navbar');
+      const scrollspy = VanillaScrollspy(navbar);
+      scrollspy.init();
+    </script>
+            
 </body>
 </html>
